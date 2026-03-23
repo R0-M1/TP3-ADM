@@ -373,7 +373,6 @@ for k in range(best_k_wdbc):
 plt.figure(figsize=(10, 7))
 scatter = plt.scatter(X_pca_wdbc[:, 0], X_pca_wdbc[:, 1], c=labels_wdbc,
                       cmap='viridis', alpha=0.6, s=30)
-plt.colorbar(scatter, label='Cluster')
 plt.title(f"Question 8 : wdbc.csv - Approche hybride (k={best_k_wdbc})")
 plt.xlabel("Composante principale 1")
 plt.ylabel("Composante principale 2")
@@ -419,7 +418,6 @@ for k in range(best_k_spamb):
 plt.figure(figsize=(10, 7))
 scatter = plt.scatter(X_pca_spamb[:, 0], X_pca_spamb[:, 1], c=labels_spamb,
                       cmap='viridis', alpha=0.6, s=10)
-plt.colorbar(scatter, label='Cluster')
 plt.title(f"Question 8 : spamb.csv - Approche hybride (k={best_k_spamb})")
 plt.xlabel("Composante principale 1")
 plt.ylabel("Composante principale 2")
